@@ -1,0 +1,39 @@
+<head>
+  <title>{{title}}</title>
+</head>
+<div class="container">
+  <div class="jumbotron">
+    <h2>Coders RealTime Stock Banner</h2>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Value
+          </th>
+          <th>
+            Change
+          </th>
+          <th>
+            Percentage
+          </th>
+          <th>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stock of stockList">       
+          <td>{{stock.name}}</td>
+          <td>{{stock.value}}</td>
+          <td>{{stock.change}}</td>
+          <td>{{stock.percentage}}</td>       
+          <td><img src="../assets/images/{{stock.image}}.png" width="50px"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
