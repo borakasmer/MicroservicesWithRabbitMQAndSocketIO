@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { StockService } from 'src/Service/StockService';
+import { StockService } from 'src/Service/stockService';
 import { Stock } from 'src/Model/stock';
 
 @Component({
